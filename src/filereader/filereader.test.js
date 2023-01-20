@@ -1,19 +1,26 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { describe, expect, it } from '@jest/globals'
+import { readCSVFile, readDirectory, readJSONFile } from './filereader'
 
-describe('csvToArray', () => {
-  it('Poops', () => {
-    expect(2 + 2).toBe(4)
-  })
-})
+
 
 
 describe('readCSVFile', () => {
-  it('Handles normal csv files with 6 columns', () => {
-    expect()
+  it('Returns void if file is not csv', () => {
+    expect(readCSVFile('index.html', x => x)).toBeUndefined()
   })
 })
 
 
-// Throw out illegal file
-// Throw out null file
+describe('readJSONFile', () => {
+  it('Returns void if file is not JSON', () => {
+    expect(readJSONFile('index.html', x => x)).toBeUndefined()
+  })
+})
+
+describe('readDirectory', () => {
+  it('reads a directory', () => {
+    expect(readDirectory('.', x => x)).toBeUndefined()
+  })
+})
+

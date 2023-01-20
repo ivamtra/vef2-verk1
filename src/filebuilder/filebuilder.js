@@ -7,7 +7,6 @@ import { createHomePage, createPage } from '../uiBuilder/uiBuilder.js'
 
 // String path => String html
 export function buildPage(csvFile) {
-    // TODO: Fá nafnið á file-num til að bua til html
     const lastSlash = csvFile.lastIndexOf('/')
     // Eitthvað.html
     const fileName = `../../dist/${csvFile.substring(lastSlash+1, csvFile.length-4)  }.html`

@@ -69,7 +69,7 @@ export function csvToArray(csv) {
  }
 
 
- function validURL(str) {
+ export function validURL(str) {
   const pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
     '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
     '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
@@ -92,5 +92,3 @@ export function getPageName(str) {
   return name.replace(name[0], name[0].toUpperCase())
 
 }
-
-console.log()
