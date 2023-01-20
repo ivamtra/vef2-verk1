@@ -26,10 +26,14 @@ describe('deleteRow', () => {
 }) 
 
 describe('csvToArray', () => {
+    const invalid = '1;2;3;4;5;6\n7;4'
     it('converts a csv file to array', () => {
         const str = '1;2;3;4;5;6\n7;4;3;2;1;6'
         expect(csvToArray(str)).
             toStrictEqual([['1','2','3','4','5','6'], ['7','4','3','2','1','6']])
+    })
+    it('Deletes a row if it is not valid', () => {
+        expect(csvToArray(invalid)).toStrictEqual([['1','2','3','4','5','6']])
     })
 })
 
@@ -70,3 +74,7 @@ describe('validURL', () => {
         expect(validURL('23abc,ds')).toBe(false)
     })
 })
+
+// describe('arrayToJSON', () => {
+//     it('')
+// })

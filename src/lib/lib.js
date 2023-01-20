@@ -37,17 +37,17 @@ export function csvToArray(csv) {
     return arr
   }
 
- export function arrayToJson(arr) {
-    const obj = arr.map(item => ({
-            numer: item[0],
-            heiti: item[1],
-            einingar: Number(item[2]),
-            misseri: item[3],
-            namstig: item[4],
-            hlekkur: item[5]
-    }))
-    return obj
- } 
+//  export function arrayToJson(arr) {
+//     const obj = arr.map(item => ({
+//             numer: item[0],
+//             heiti: item[1],
+//             einingar: Number(item[2]),
+//             misseri: item[3],
+//             namstig: item[4],
+//             hlekkur: item[5]
+//     }))
+//     return obj
+//  } 
 
  export function handleNumber(str) {
   // Íslensk tala
