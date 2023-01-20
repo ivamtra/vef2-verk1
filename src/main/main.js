@@ -1,17 +1,21 @@
-import { buildHomePage2, buildPage2 } from '../filebuilder/filebuilder.js';
-import { readDirectory } from '../filereader/filereader.js';
+import * as fs from 'fs';
+import { buildHomePage, buildPage } from '../filebuilder/filebuilder.js';
 import { getFileExtension } from '../lib/lib.js';
 
 const PATH = '../data'
-readDirectory(PATH, files => {
+
+
+fs.readdir(PATH, (err, files) => {
+    if (err) throw err
     files.forEach(file => {
         if (getFileExtension(file) === '.csv') {
-            buildPage2(`${PATH  }/${file}`)
+            console.log(file)
+            buildPage(`${PATH  }/${file}`)
         }
         else if (getFileExtension(file) === '.json') {
-            buildHomePage2(`${PATH  }/${file}`)
+            buildHomePage(`${PATH  }/${file}`)
         }
     });
-})
 
+})
 
