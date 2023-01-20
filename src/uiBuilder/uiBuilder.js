@@ -1,61 +1,71 @@
-import { getFileName } from '../lib/lib.js'
+import { getFileName, handleMisseri, handleNumber, handleURL } from '../lib/lib.js'
 // 6 dálkar
 export function createTableHeader(dataRow) {
-  console.log(dataRow)
   return `
-        <table>
-            <thead>
-                <tr>
-                    <th>${dataRow[0]}</th>
-                    <th>${dataRow[1]}</th>
-                    <th>${dataRow[2]}</th>
-                    <th>${dataRow[3]}</th>
-                    <th>${dataRow[4]}</th>
-                    <th>Hlekkur</th>
-                </tr>
-            </thead>
+          <thead>
+            <tr>
+              <th><button onclick="sort(0)">${dataRow[0]}</button></th>
+              <th><button onclick="sort(1)">${dataRow[1]}</button></th>
+              <th><button onclick="sort(2)">${dataRow[2]}</button></th>
+              <th><button onclick="sort(3)">${dataRow[3]}</button></th>
+              <th><button onclick="sort(4)">${dataRow[4]}</button></th>
+              <th>Hlekkur</th>
+            </tr>
+          </thead>
     `
 }
 
 export function createTableRow(dataRow) {
-  return `
-        <tbody>
-            <tr>
-                <td>${dataRow?.[0]}</td>
-                <td>${dataRow?.[1]}</td>
-                <td>${dataRow?.[2]}</td>
-                <td>${dataRow?.[3]}</td>
-                <td>${dataRow?.[4]}</td>
-                <td>
-                  <a href="${dataRow?.[5]}">
-                    ${dataRow?.[5]}
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    `
-}
-export function closeTable() {
-  return '</table>'
+  // Birta bara ef áfanginn hefur heiti
+  if (dataRow[1])
+    return `
+              <tr>
+                  <td data-label="Númer">${dataRow?.[0]}</td>
+                  <td data-label="Heiti">${dataRow?.[1]}</td>
+                  <td data-label="Einingar">${handleNumber(dataRow?.[2])}</td>
+                  <td data-label="Misseri">${handleMisseri(dataRow?.[3])}</td>
+                  <td data-label="Námstig">${dataRow?.[4]}</td>
+                  <td data-label="Hlekkur">
+                    <a href="${handleURL(dataRow?.[5])}">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      `
+  return ''
 }
 
-export function createTable(data) {
 
-  if (!data || data.length <= 2) return null
-  // Byrja á headernum
-  let table = createTableHeader(data[0])
+export function createTable2(dataArr) {
+  if (!dataArr || dataArr.length <= 2) return null
 
-  //
+  // Bua til head og upphafsstilla body
+  const tableHead = createTableHeader(dataArr[0])
+  let tableBody = ''
+
   // eslint-disable-next-line no-plusplus
-  for (let i = 1; i < data.length - 1; i++) {
-    table += createTableRow(data?.[i])
-  }
-  table += closeTable()
+  for (let i = 1; i < dataArr.length; i++) {
+    tableBody += createTableRow(dataArr[i])
+  } 
 
+  const table =
+  `
+    <table>
+      <thead>
+      ${tableHead}
+      </thead>
+      <tbody>
+        ${tableBody}
+      </tbody>
+    </table>
+  `  
   return table
 }
 
-export function htmlWrap(innerHtml) {
+
+
+// String => String
+export function htmlWrap(title, innerHtml) {
   return `
   <!DOCTYPE html>
   <html lang="is">
@@ -65,25 +75,25 @@ export function htmlWrap(innerHtml) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="../public/styles.css" />
+      <script src="./client.js" defer></script>
     </head>
     <body>
+      <h1>${title}</h1>
       ${innerHtml}
     </body>
 </html>`
 }
 
-export function createHTML(data) {
-  const table = createTable(data)
-  return htmlWrap(table)
+// [[]] => Html string
+export function createPage(title, data) {
+  const table = createTable2(data)
+  return htmlWrap(title, table)
 }
 
-export function createHomePage(data) {
-  console.log(data)
+// [Obj] => Html string
+export function createHomePage(title,indexData) {
   let html = ''
-  data.forEach(object => {
-
-    // Athuga hvort að csv fællinn er valid áður en við bætum því
-    // í viðmótið
+  indexData.forEach(object => {
     html += `
       <div class="home-wrapper">
         <a href="./${getFileName(object?.csv)}.html">
@@ -93,7 +103,7 @@ export function createHomePage(data) {
       </div>
       `
     })
-  return htmlWrap(html)
+  return htmlWrap(title,html)
 }
 
 

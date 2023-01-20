@@ -7,935 +7,836 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="../public/styles.css" />
+      <script src="./client.js" defer></script>
     </head>
     <body>
+      <h1>Hagfraedi</h1>
       
-        <table>
-            <thead>
-                <tr>
-                    <th>Númer</th>
-                    <th>Heiti</th>
-                    <th>Einingar</th>
-                    <th>Kennslumisseri</th>
-                    <th>Námstig</th>
-                    <th>Hlekkur</th>
-                </tr>
-            </thead>
-    
-        <tbody>
+    <table>
+      <thead>
+      
+          <thead>
             <tr>
-                <td>HAG403G</td>
-                <td>Þættir í eindahagfræði (Þættir í rekstrarhagfræði)</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530620230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530620230&kennsluar=2022
-                  </a>  
-                </td>
+              <th><button onclick="sort(0)">Númer</button></th>
+              <th><button onclick="sort(1)">Heiti</button></th>
+              <th><button onclick="sort(2)">Einingar</button></th>
+              <th><button onclick="sort(3)">Kennslumisseri</button></th>
+              <th><button onclick="sort(4)">Námstig</button></th>
+              <th>Hlekkur</th>
             </tr>
-        </tbody>
+          </thead>
     
-        <tbody>
-            <tr>
-                <td>HAG104M</td>
-                <td>Hagnýttar hagmælingar</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70754420226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70754420226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG515M</td>
-                <td>Hagfræði stjórnmálanna</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70985920226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70985920226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG203G</td>
-                <td>Hagræn stærðfræði II</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510820230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510820230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG262L</td>
-                <td>BA ritgerð</td>
-                <td>12</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG408G</td>
-                <td>Efnahagsmál í ræðu og riti (áður Aðferðir í hagfræði)</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70943320230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70943320230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG311G</td>
-                <td>Haglýsing</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04420120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04420120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG229F</td>
-                <td>Þjóðhagfræði í meistaranámi</td>
-                <td>7,5</td>
-                <td>Vor</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930720230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930720230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG024F</td>
-                <td>Þættir í tölfræði</td>
-                <td>7,5</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71119020226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71119020226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG230F</td>
-                <td>Skuldabréf</td>
-                <td>7,5</td>
-                <td>Vor</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930820230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930820230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG561L</td>
-                <td>Doktorsritgerð í hagfræði</td>
-                <td>180</td>
-                <td>Sumar</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120233&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120233&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG508G</td>
-                <td>Alþjóðahagfræði</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG617M</td>
-                <td>Inngangur að réttarhagfræði</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70873020230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70873020230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG031M</td>
-                <td>Náttúruauðlindir og fiskihagfræði</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70980520230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70980520230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG124F</td>
-                <td>Inngangur að hagfræði fyrir meistaranema</td>
-                <td>7,5</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930520226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930520226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG433L</td>
-                <td>MS ritgerð í fjármálahagfræði</td>
-                <td>30</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG107G</td>
-                <td>Eindahagfræði I (Inngangur að hagfræði)</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70877820226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70877820226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG014F</td>
-                <td>Sérhæfð verkefni í fjármálum</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70855120230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70855120230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG409G</td>
-                <td>Bankar og peningar</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530320230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530320230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG601M</td>
-                <td>Hagkerfi</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04531620230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04531620230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG304G</td>
-                <td>Eindahagfræði III (Rekstrarhagfræði III)</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520820226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520820226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG434L</td>
-                <td>MA ritgerð í hagnýttri hagfræði</td>
-                <td>30</td>
-                <td>Vor</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG433L</td>
-                <td>MS ritgerð í fjármálahagfræði</td>
-                <td>30</td>
-                <td>Sumar</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720233&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720233&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG309G</td>
-                <td>Heildahagrannsóknir</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG261L</td>
-                <td>BS ritgerð</td>
-                <td>12</td>
-                <td>Sumar</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420233&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420233&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG561L</td>
-                <td>Doktorsritgerð í hagfræði</td>
-                <td>180</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG108G</td>
-                <td>Líkindafræði og forritun (Líkindareikningur og tölfræði)</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70387220226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70387220226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG405G</td>
-                <td>Almannavalsfræði</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70985820230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70985820230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG434L</td>
-                <td>MA ritgerð í hagnýttri hagfræði</td>
-                <td>30</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG125F</td>
-                <td>Rekstrarhagfræði fyrir meistaranema</td>
-                <td>7,5</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930620226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930620226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG261L</td>
-                <td>BS ritgerð</td>
-                <td>12</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG208G</td>
-                <td>Fjármálahagfræði II</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70889620230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70889620230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG261L</td>
-                <td>BS ritgerð</td>
-                <td>12</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG209G</td>
-                <td>Heildahagfræði II (Þjóðhagfræði II)</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520220230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520220230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG103G</td>
-                <td>Heildahagfræði I (Þjóðhagfræði I)</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG122F</td>
-                <td>Fjármálastærðfræði I (Fjármálatölfræði)</td>
-                <td>7,5</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70929720226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70929720226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG301G</td>
-                <td>Hagræn stærðfræði III</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520520226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520520226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG406G</td>
-                <td>Þjóðhagslíkön og þjóðhagsspár</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096420230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096420230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG512G</td>
-                <td>Verðmat fyrirtækja</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70982720226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70982720226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG605G</td>
-                <td>Fjármál hins opinbera</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530220230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530220230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG101G</td>
-                <td>Hagræn stærðfræði I</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>foo</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510320226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510320226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG101F</td>
-                <td>Kostnaðar- og nytjagreining</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04062420226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04062420226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG606G</td>
-                <td>Hagrannsóknir III</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530520230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530520230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG014F</td>
-                <td>Sérhæfð verkefni í fjármálum</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70855120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70855120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG514M</td>
-                <td>Vinnumarkaðshagfræði</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70873120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70873120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG512M</td>
-                <td>Atvinnuvegahagfræði</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70362120226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70362120226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG122M</td>
-                <td>Fjármálastærðfræði II (Hagfræði og stærðfræði fjármálamarkaða)</td>
-                <td>7,5</td>
-                <td>Haust</td>
-                <td>Grunnnám / Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70928720226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70928720226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG262L</td>
-                <td>BA ritgerð</td>
-                <td>12</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG561L</td>
-                <td>Doktorsritgerð í hagfræði</td>
-                <td>180</td>
-                <td>Vor</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG308G</td>
-                <td>Eindahagrannsóknir</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096020226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096020226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG210G</td>
-                <td>Hagrannsóknir</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04511120230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04511120230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG231F</td>
-                <td>Bankar og fjármálamarkaðir</td>
-                <td>7,5</td>
-                <td>Vor</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930920230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930920230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG407G</td>
-                <td>Þættir í heildahagfræði (Þættir í Þjóðhagfræði)</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70983320230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70983320230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG123F</td>
-                <td>Inngangur að megindlegum aðferðum í hagfræði</td>
-                <td>7,5</td>
-                <td>Haust</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930420226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930420226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG310G</td>
-                <td>Heildahagfræði III (Þjóðhagfræði III)</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520620226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520620226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG514G</td>
-                <td>Fjármál hins opinbera</td>
-                <td>6</td>
-                <td>Haust</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530220226&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530220226&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG262L</td>
-                <td>BA ritgerð</td>
-                <td>12</td>
-                <td>Sumar</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320233&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320233&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG201G</td>
-                <td>Eindahagfræði II (Rekstrarhagfræði II)</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04410820230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04410820230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG434L</td>
-                <td>MA ritgerð í hagnýttri hagfræði</td>
-                <td>30</td>
-                <td>Sumar</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420233&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420233&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG433L</td>
-                <td>MS ritgerð í fjármálahagfræði</td>
-                <td>30</td>
-                <td>Vor</td>
-                <td>Framhaldsnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
-    
-        <tbody>
-            <tr>
-                <td>HAG615G</td>
-                <td>Saga hagfræðikenninga</td>
-                <td>6</td>
-                <td>Vor</td>
-                <td>Grunnnám</td>
-                <td>
-                  <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71101920230&kennsluar=2022">
-                    https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71101920230&kennsluar=2022
-                  </a>  
-                </td>
-            </tr>
-        </tbody>
+      </thead>
+      <tbody>
+        
+              <tr>
+                  <td data-label="Númer">HAG403G</td>
+                  <td data-label="Heiti">Þættir í eindahagfræði (Þættir í rekstrarhagfræði)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530620230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG104M</td>
+                  <td data-label="Heiti">Hagnýttar hagmælingar</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70754420226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG515M</td>
+                  <td data-label="Heiti">Hagfræði stjórnmálanna</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70985920226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG203G</td>
+                  <td data-label="Heiti">Hagræn stærðfræði II</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510820230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG262L</td>
+                  <td data-label="Heiti">BA ritgerð</td>
+                  <td data-label="Einingar">12</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG408G</td>
+                  <td data-label="Heiti">Efnahagsmál í ræðu og riti (áður Aðferðir í hagfræði)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70943320230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG311G</td>
+                  <td data-label="Heiti">Haglýsing</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04420120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG229F</td>
+                  <td data-label="Heiti">Þjóðhagfræði í meistaranámi</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930720230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG024F</td>
+                  <td data-label="Heiti">Þættir í tölfræði</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71119020226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG230F</td>
+                  <td data-label="Heiti">Skuldabréf</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930820230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG561L</td>
+                  <td data-label="Heiti">Doktorsritgerð í hagfræði</td>
+                  <td data-label="Einingar">180</td>
+                  <td data-label="Misseri">Sumar</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120233&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG508G</td>
+                  <td data-label="Heiti">Alþjóðahagfræði</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG617M</td>
+                  <td data-label="Heiti">Inngangur að réttarhagfræði</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70873020230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG031M</td>
+                  <td data-label="Heiti">Náttúruauðlindir og fiskihagfræði</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70980520230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG124F</td>
+                  <td data-label="Heiti">Inngangur að hagfræði fyrir meistaranema</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930520226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG433L</td>
+                  <td data-label="Heiti">MS ritgerð í fjármálahagfræði</td>
+                  <td data-label="Einingar">30</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG107G</td>
+                  <td data-label="Heiti">Eindahagfræði I (Inngangur að hagfræði)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70877820226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG014F</td>
+                  <td data-label="Heiti">Sérhæfð verkefni í fjármálum</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70855120230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG409G</td>
+                  <td data-label="Heiti">Bankar og peningar</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530320230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG601M</td>
+                  <td data-label="Heiti">Hagkerfi</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04531620230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG304G</td>
+                  <td data-label="Heiti">Eindahagfræði III (Rekstrarhagfræði III)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520820226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG434L</td>
+                  <td data-label="Heiti">MA ritgerð í hagnýttri hagfræði</td>
+                  <td data-label="Einingar">30</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG433L</td>
+                  <td data-label="Heiti">MS ritgerð í fjármálahagfræði</td>
+                  <td data-label="Einingar">30</td>
+                  <td data-label="Misseri">Sumar</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720233&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG309G</td>
+                  <td data-label="Heiti">Heildahagrannsóknir</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG261L</td>
+                  <td data-label="Heiti">BS ritgerð</td>
+                  <td data-label="Einingar">12</td>
+                  <td data-label="Misseri">Sumar</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420233&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG561L</td>
+                  <td data-label="Heiti">Doktorsritgerð í hagfræði</td>
+                  <td data-label="Einingar">180</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG108G</td>
+                  <td data-label="Heiti">Líkindafræði og forritun (Líkindareikningur og tölfræði)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70387220226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG405G</td>
+                  <td data-label="Heiti">Almannavalsfræði</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70985820230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG434L</td>
+                  <td data-label="Heiti">MA ritgerð í hagnýttri hagfræði</td>
+                  <td data-label="Einingar">30</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG125F</td>
+                  <td data-label="Heiti">Rekstrarhagfræði fyrir meistaranema</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930620226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG261L</td>
+                  <td data-label="Heiti">BS ritgerð</td>
+                  <td data-label="Einingar">12</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG208G</td>
+                  <td data-label="Heiti">Fjármálahagfræði II</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70889620230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG261L</td>
+                  <td data-label="Heiti">BS ritgerð</td>
+                  <td data-label="Einingar">12</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91015420230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG209G</td>
+                  <td data-label="Heiti">Heildahagfræði II (Þjóðhagfræði II)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520220230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG103G</td>
+                  <td data-label="Heiti">Heildahagfræði I (Þjóðhagfræði I)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG122F</td>
+                  <td data-label="Heiti">Fjármálastærðfræði I (Fjármálatölfræði)</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70929720226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG301G</td>
+                  <td data-label="Heiti">Hagræn stærðfræði III</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520520226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG406G</td>
+                  <td data-label="Heiti">Þjóðhagslíkön og þjóðhagsspár</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096420230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG512G</td>
+                  <td data-label="Heiti">Verðmat fyrirtækja</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70982720226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG605G</td>
+                  <td data-label="Heiti">Fjármál hins opinbera</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530220230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG101G</td>
+                  <td data-label="Heiti">Hagræn stærðfræði I</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">foo</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04510320226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG101F</td>
+                  <td data-label="Heiti">Kostnaðar- og nytjagreining</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04062420226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG606G</td>
+                  <td data-label="Heiti">Hagrannsóknir III</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530520230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG014F</td>
+                  <td data-label="Heiti">Sérhæfð verkefni í fjármálum</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70855120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG514M</td>
+                  <td data-label="Heiti">Vinnumarkaðshagfræði</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70873120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG512M</td>
+                  <td data-label="Heiti">Atvinnuvegahagfræði</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70362120226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG122M</td>
+                  <td data-label="Heiti">Fjármálastærðfræði II (Hagfræði og stærðfræði fjármálamarkaða)</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám / Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70928720226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG262L</td>
+                  <td data-label="Heiti">BA ritgerð</td>
+                  <td data-label="Einingar">12</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG561L</td>
+                  <td data-label="Heiti">Doktorsritgerð í hagfræði</td>
+                  <td data-label="Einingar">180</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91023120230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG308G</td>
+                  <td data-label="Heiti">Eindahagrannsóknir</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71096020226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG210G</td>
+                  <td data-label="Heiti">Hagrannsóknir</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04511120230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG231F</td>
+                  <td data-label="Heiti">Bankar og fjármálamarkaðir</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930920230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG407G</td>
+                  <td data-label="Heiti">Þættir í heildahagfræði (Þættir í Þjóðhagfræði)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70983320230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG123F</td>
+                  <td data-label="Heiti">Inngangur að megindlegum aðferðum í hagfræði</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70930420226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG310G</td>
+                  <td data-label="Heiti">Heildahagfræði III (Þjóðhagfræði III)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04520620226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG514G</td>
+                  <td data-label="Heiti">Fjármál hins opinbera</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Haust</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04530220226&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG262L</td>
+                  <td data-label="Heiti">BA ritgerð</td>
+                  <td data-label="Einingar">12</td>
+                  <td data-label="Misseri">Sumar</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91017320233&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG201G</td>
+                  <td data-label="Heiti">Eindahagfræði II (Rekstrarhagfræði II)</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=04410820230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG434L</td>
+                  <td data-label="Heiti">MA ritgerð í hagnýttri hagfræði</td>
+                  <td data-label="Einingar">30</td>
+                  <td data-label="Misseri">Sumar</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91068420233&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG433L</td>
+                  <td data-label="Heiti">MS ritgerð í fjármálahagfræði</td>
+                  <td data-label="Einingar">30</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=91010720230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG615G</td>
+                  <td data-label="Heiti">Saga hagfræðikenninga</td>
+                  <td data-label="Einingar">6</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Grunnnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=71101920230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td data-label="Númer">HAG015F</td>
+                  <td data-label="Heiti">Hagfræðileg ákvarðanataka</td>
+                  <td data-label="Einingar">7,5</td>
+                  <td data-label="Misseri">Vor</td>
+                  <td data-label="Námstig">Framhaldsnám</td>
+                  <td data-label="Hlekkur">
+                    <a href="https://ugla.hi.is/kennsluskra/?tab=nam&chapter=namskeid&id=70943420230&kennsluar=2022">
+                      Námsskrá
+                    </a>  
+                  </td>
+              </tr>
+      
+      </tbody>
     </table>
+  
     </body>
 </html>
