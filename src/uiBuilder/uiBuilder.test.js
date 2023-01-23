@@ -1,15 +1,11 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { describe, expect, it } from '@jest/globals'
 import {
-  createHomePage, createPage, createTable2,
+  createHomePage, createPage, createTable,
   createTableHeader, createTableRow, htmlWrap
 } from './uiBuilder'
 
-describe('csvToArray', () => {
-  it('Poops', () => {
-    expect(2 + 2).toBe(4)
-  })
-})
+
 
 describe('createTableHeader', () => {
   const header =['Númer', 'Heiti', 'Einingar', 'Kennslumisseri', 'Námsstig']
@@ -19,7 +15,7 @@ describe('createTableHeader', () => {
 })
 
 
-describe('createTable2', () => {
+describe('createTableRow', () => {
   const header =['Númer', 'Heiti', 'Einingar', 'Kennslumisseri', 'Námsstig', 'youtube.com']
   const invalid =['Númer', '', 'Einingar', 'Kennslumisseri', 'Námsstig', 'youtube.com']
   it('should create a row from data', () => {
@@ -30,7 +26,7 @@ describe('createTable2', () => {
   })
 })
 
-describe('createTable2', () => {
+describe('createTable', () => {
   const arrValid = [['1','2','3','4','5'], ['asd','asd','qwe','fdsg','asdf','adsf'],
                      ['123','asdf','dsdf','sdfa','asf','asd']]
   const test1 = [['1','2','3','4','5']]
@@ -38,13 +34,13 @@ describe('createTable2', () => {
   const test3 = null
 
   it('should create an html table from a 2d array', () => {
-    expect(createTable2(arrValid)).toBeTruthy()
+    expect(createTable(arrValid)).toBeTruthy()
 
   })
   it('should return null if table is not valid', () => {
-    expect(createTable2(test1)).toBeFalsy()
-    expect(createTable2(test2)).toBeFalsy()
-    expect(createTable2(test3)).toBeFalsy()
+    expect(createTable(test1)).toBeFalsy()
+    expect(createTable(test2)).toBeFalsy()
+    expect(createTable(test3)).toBeFalsy()
 
   })
 })

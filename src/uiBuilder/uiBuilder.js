@@ -20,12 +20,12 @@ export function createTableRow(dataRow) {
   if (dataRow[1])
     return `
               <tr>
-                  <td data-label="Númer">${dataRow?.[0]}</td>
-                  <td data-label="Heiti">${dataRow?.[1]}</td>
-                  <td data-label="Einingar">${handleNumber(dataRow?.[2])}</td>
-                  <td data-label="Misseri">${handleMisseri(dataRow?.[3])}</td>
-                  <td data-label="Námstig">${dataRow?.[4]}</td>
-                  <td data-label="Hlekkur">
+                  <td tabindex="0" data-label="Númer">${dataRow?.[0]}</td>
+                  <td tabindex="0" data-label="Heiti">${dataRow?.[1]}</td>
+                  <td tabindex="0" data-label="Einingar">${handleNumber(dataRow?.[2])}</td>
+                  <td tabindex="0" data-label="Misseri">${handleMisseri(dataRow?.[3])}</td>
+                  <td tabindex="0" data-label="Námstig">${dataRow?.[4]}</td>
+                  <td tabindex="0" data-label="Hlekkur">
                     <a href="${handleURL(dataRow?.[5])}">
                       Námsskrá
                     </a>  
@@ -36,7 +36,7 @@ export function createTableRow(dataRow) {
 }
 
 
-export function createTable2(dataArr) {
+export function createTable(dataArr) {
   if (!dataArr || dataArr.length <= 2) return null
 
   // Bua til head og upphafsstilla body
@@ -86,7 +86,7 @@ export function htmlWrap(title, innerHtml) {
 
 // [[]] => Html string
 export function createPage(title, data) {
-  const table = createTable2(data)
+  const table = createTable(data)
   return htmlWrap(title, table)
 }
 
