@@ -4,6 +4,7 @@
   "description": "[Kynning í fyrirlestri](https://youtu.be/Mjrug2-LGfk).",
   "main": "index.js",
   "scripts": {
+    "build": "cp ./public/styles.css ./dist && node ./src/main/main.js",
     "stylelint": "stylelint styles.css ./**/*.css",
     "eslint": "eslint ./**/*.js",
     "dev": "browser-sync start --server --files **/*.js styles.css index.html",
