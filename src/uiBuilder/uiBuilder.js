@@ -64,7 +64,7 @@ export function createTable(dataArr) {
 
 
 // String => String
-export function htmlWrap(title, innerHtml) {
+export function htmlWrap(title, innerHtml, isJson=false) {
   return `
   <!DOCTYPE html>
   <html lang="is">
@@ -75,6 +75,7 @@ export function htmlWrap(title, innerHtml) {
       <title>${title}</title>
       <link rel="stylesheet" href="./public/styles.css" />
       <script src="./client.js" defer></script>
+      ${isJson ? '<script src="./delete404links.js" defer></script>' : ''}
     </head>
     <body>
       <h1>${title}</h1>
@@ -102,7 +103,7 @@ export function createHomePage(title,indexData) {
       </div>
       `
     })
-  return htmlWrap(title,html)
+  return htmlWrap(title,html, true)
 }
 
 
