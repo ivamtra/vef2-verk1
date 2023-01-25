@@ -20,6 +20,8 @@ describe('createTableRow', () => {
   const invalid =['Númer', '', 'Einingar', 'Kennslumisseri', 'Námsstig', 'youtube.com']
   it('should create a row from data', () => {
     expect(createTableRow(header)).toBeTruthy()
+    expect(createTableRow(header)).toContain('Númer')
+    expect(createTableRow(header)).toContain('Námsstig')
   })
   it('should not create a row if a course has no name', () => {
     expect(createTableRow(invalid)).toBeFalsy()
@@ -35,6 +37,8 @@ describe('createTable', () => {
 
   it('should create an html table from a 2d array', () => {
     expect(createTable(arrValid)).toBeTruthy()
+    expect(createTable(arrValid)).toContain('asf')
+    expect(createTable(arrValid)).toContain('asd')
 
   })
   it('should return null if table is not valid', () => {
@@ -48,6 +52,9 @@ describe('createTable', () => {
 describe('htmlWrap', () => {
   it('Wraps an html string in boilerplate', () => {
     expect(htmlWrap('asdasd')).toBeTruthy()
+    expect(htmlWrap('<h1>header</h1>')).toContain('<h1>header</h1>')
+    expect(htmlWrap('<h1>header</h1>')).toContain('<!DOCTYPE html>')
+    expect(htmlWrap('<h1>header</h1>')).toContain('<script src="./client.js" defer></script>')
   })
 })
 

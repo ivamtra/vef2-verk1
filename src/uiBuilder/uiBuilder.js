@@ -1,17 +1,16 @@
 import { getFileName, handleMisseri, handleNumber, handleURL } from '../lib/lib.js'
 // 6 dálkar
 export function createTableHeader(dataRow) {
-  return `
-          <thead>
-            <tr>
-              <th><button onclick="sort(0)">${dataRow[0]}</button></th>
-              <th><button onclick="sort(1)">${dataRow[1]}</button></th>
-              <th><button onclick="sort(2)">${dataRow[2]}</button></th>
-              <th><button onclick="sort(3)">${dataRow[3]}</button></th>
-              <th><button onclick="sort(4)">${dataRow[4]}</button></th>
-              <th>Hlekkur</th>
-            </tr>
-          </thead>
+  return `<thead>
+  <tr>
+    <th><button onclick="sort(0)">${dataRow[0]}</button></th>
+    <th><button onclick="sort(1)">${dataRow[1]}</button></th>
+    <th><button onclick="sort(2)">${dataRow[2]}</button></th>
+    <th><button onclick="sort(3)">${dataRow[3]}</button></th>
+    <th><button onclick="sort(4)">${dataRow[4]}</button></th>
+    <th>Hlekkur</th>
+  </tr>
+</thead>
     `
 }
 
@@ -73,7 +72,7 @@ export function htmlWrap(title, innerHtml) {
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>${title}</title>
       <link rel="stylesheet" href="./public/styles.css" />
       <script src="./client.js" defer></script>
     </head>
